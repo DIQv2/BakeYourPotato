@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potato Facts</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/facts.css" />
+  </head>
+
+  <body>
+    <header>
+      <button id="open-menu" onclick="openMenu()">
+        <img src="img/potato.png" alt="dropDownIcon" />
+      </button>
+      <h1 id="title">Potato Facts!</h1>
+      <div id="menu-base">
+        <a href="index.html">Home Page</a>
+        <a href="recipies.html">Recipies</a>
+        <a href="potatoFacts.html" id="active">Potato Facts</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Origins!</h2>
+        <p>
+          Potatoes (Solanum tuberosum) originated in the Andes Mountains of
+          South America, specifically in what is now Peru and Bolivia.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Varieties</h2>
+        <p>
+          Potatoes are a good source of vitamins and minerals, particularly
+          vitamin C, potassium, vitamin B6, and fiber. They are also relatively
+          low in calories when prepared without added fats or oils.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Nutritional Value</h2>
+        <p>
+          Sit consequat aute do in cillum eiusmod eiusmod ea proident commodo
+          non minim amet. Deserunt excepteur exercitation ullamco elit sunt amet
+          ea proident enim aute do anim elit. Aliquip aliquip esse consequat
+          Lorem anim do. Eu est id officia sint eu ipsum ullamco eiusmod in
+          veniam adipisicing. Anim sit labore minim sit cillum aliqua
+          reprehenderit qui qui eu mollit aute ad voluptate. Anim cillum ut
+          tempor adipisicing et adipisicing reprehenderit velit nostrud laboris
+          cillum eiusmod laboris.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Versatility</h2>
+        <p>
+          Potatoes are an incredibly versatile food and can be cooked in
+          numerous ways, including boiling, baking, frying, mashing, and
+          roasting. They are a staple ingredient in many cuisines around the
+          world.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Starch Content</h2>
+        <p>
+          Potatoes are composed mainly of carbohydrates, with starch being the
+          predominant form. This makes them a good source of energy, especially
+          for those engaging in physical activities.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Storage</h2>
+        <p>
+          Potatoes should be stored in a cool, dark, and well-ventilated place
+          to prevent sprouting and spoilage. Exposure to light can cause
+          potatoes to turn green and develop a bitter taste due to the formation
+          of solanine.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Cultural Importance</h2>
+        <p>
+          Potatoes have played a significant role in human history, particularly
+          during times of famine. They are credited with helping to alleviate
+          hunger in Europe during the 18th and 19th centuries and are a staple
+          food in many parts of the world today.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Genetic Diversity</h2>
+        <p>
+          The genetic diversity of potatoes is vast, with wild varieties still
+          existing in the Andes region. This diversity has been crucial in
+          breeding programs aimed at developing disease-resistant and
+          higher-yielding potato varieties.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Top Potato Producers</h2>
+        <p>
+          China is the world's largest producer of potatoes, followed by India
+          and Russia. Other major potato-producing countries include Ukraine,
+          the United States, and Germany.
+        </p>
+      </div>
+
+      <div class="factObject" onmouseover="dragFact(this)">
+        <h2>Cultural Significance</h2>
+        <p>
+          Potatoes are not only a dietary staple but also hold cultural
+          significance in various societies. They feature prominently in
+          traditional dishes and celebrations in many countries, such as
+          Ireland's St. Patrick's Day where potatoes are a central part of the
+          feast.
+        </p>
+      </div>
+
+      <div class="factObject"  id="aiWritten" onmouseover="dragFact(this)">
+        <h2>Text written by ChatGPT AI</h2>
+      </div>
+    </div>
+
+    <div id="tryDragging">Try dragging!</div>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/facts.js"></script>
+</html>

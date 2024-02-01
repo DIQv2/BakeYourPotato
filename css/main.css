@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+header{
+    position: fixed;
+    background-color: rgb(255, 192, 45);
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+    color: black;
+}
+
+footer{
+    position: fixed;
+    background-color: rgb(255, 192, 45);
+    width: 100vw;
+    bottom: 0;
+    height: 18vw;
+    z-index: 100;
+    color: black;
+}
+
+#active{
+    font-weight: bold;
+}
+
+#title{
+    text-align: center;
+    line-height: 18vw;
+    margin-left: 18vw;
+    font-size: 8vw;
+    text-decoration: underline;
+    margin: 0;
+}
+
+#open-menu{
+    position: absolute;
+    top: 0;
+    width: 18vw;
+    height: 18vw;
+    background-color: black;
+    border: 1vw solid rgb(255, 192, 45);
+}
+
+#open-menu:hover{
+    border: 1vw solid rgb(255, 208, 99);
+}
+
+#open-menu img{
+    height: 13vw;
+    width: 13vw;
+    background-color: transparent;
+}
+
+#menu-base{
+    max-height: 0;
+    text-align: center;
+    line-height: 2.7em;
+    z-index: 99;
+    overflow: clip;
+    transition: .9s;
+    -webkit-transition: .9s;
+}
+
+#menu-base.visible{
+    max-height: 50vh;
+    overflow: initial;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+#menu-base ul{
+    list-style-type: none;
+}
+
+#menu-base a{
+    display: block;
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#menu-base a:hover{
+    font-weight: bold;
+}
+
+#intro{
+    background-color: rgb(255, 132, 18);
+    color: black;
+    padding: 2vw;
+    padding-bottom: 1vw;
+    margin-bottom: 3vw;
+    border: 1vw solid rgb(255, 196, 0);
+}
+
+#outro{
+    background-color: rgb(255, 196, 0);
+    color: black;
+    padding: 2vw;
+    padding-bottom: 1vw;
+    margin-bottom: 4vw;
+    border: 1vw solid rgb(255, 133, 18);
+}
+
+.content{
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 20vw;
+}
+
+#featured{
+    border: 0.25em solid rgb(255, 170, 0);
+    background-color: black;
+    border-bottom: 0px;
+}
+
+#featured img{
+    border-radius: 0px;
+    margin: 0px;
+    opacity: 60%;
+    height: 55vw;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+}
+
+#featuredName {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.271);
+    height: 20%;
+}
+
+.leftButton {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+    height: 10vw;
+    width: 10vw;
+    background-color: none;
+    background-image: url("../img/leftArrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leftButton:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rightButton {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+    height: 10vw;
+    width: 10vw;
+    background-color: none;
+    background-image: url("../img/rightArrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rightButton:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#feauturedLabel1{
+    background-color: black;
+    color: yellow;
+    border: 0.25em solid  rgb(255, 170, 0);
+    border-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 2% 2% 1% 2%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+}
+
+#feauturedLabel1 h2{
+    font-size: 4vw;
+}
+
+#checkOut{
+    background-color: black;
+    color: yellow;
+    border: 0.25em solid  rgb(255, 170, 0);
+    border-radius: 0px 0px 0px 0px;
+    margin: 0px;
+    font-size: 3vw;
+    width: 100%;
+    line-height: 50px;
+    z-index: 95;
+}
+
+#createRecipe{
+    cursor: pointer;
+    text-align: center;
+    line-height: 18vw;
+    margin-left: 18vw;
+    font-size: 8vw;
+    margin: 0;
+}
+
+#createRecipe:hover{
+    background-color: rgb(255, 216, 99);
+}
+
+@media (min-width: 769px) {
+
+    #menu-base a{
+        display: inline-block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #title{
+        line-height: 100px;
+        margin-left: 0;
+        font-size: 50px;
+    }
+
+    #open-menu{
+        display: none;
+    }
+
+    #menu-base{
+        max-height: 50vh;
+    }
+
+    #createRecipe{
+        line-height: 100px;
+        font-size: 50px;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    .content{
+        margin-top: 170px;
+    }
+}
+
+@media (min-width: 991px) {
+    #intro{
+        width: 40%;
+        margin-top: 245px;
+    }
+
+    #featuredPageContent{
+        position: absolute;
+        left: 50%;
+        top: 180px;
+        width: 45vw;
+    }
+
+    #feauturedLabel1 h2{
+        font-size: 30px;
+    }
+
+    #featured img{
+        height: 30vw;
+    }
+
+    #checkOut{
+        font-size: 20px;
+    }
+
+    .leftButton{
+        height: 60px;
+        width: 60px;
+    }
+
+    .rightButton{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (min-width: 1230px) {
+    #intro{
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+
+    #outro{
+        width: 40%;
+        margin-top: 0;
+    }
+
+    #featuredPageContent{
+        top: 55%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 1500px) {
+    #intro{
+        margin-top: 255px;
+    }
+}

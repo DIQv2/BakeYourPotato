@@ -1,0 +1,91 @@
+.factObject{
+    background-color: rgb(77, 104, 128);
+    border: 4px solid aliceblue;
+    user-select: none;
+    margin: 10px;
+}
+
+.factObject h2{
+    text-align: center;
+}
+
+.factObject p{
+    padding: 1%;
+}
+
+.taken{
+    height: fit-content;
+}
+
+#tryDragging{
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 157, 0);
+    border: 5px solid white;
+    padding: 1%;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    user-select: none;
+}
+
+#aiWritten{
+    padding: 5%;
+    background-color: rgb(232, 141, 14);
+}
+
+@media (max-width: 991px) {
+    .factObject:nth-child(2n){
+        background-color: rgb(77, 104, 128);
+    }
+
+    .factObject:nth-child(2n+1){
+        background-color: rgb(51, 67, 81);
+    }
+}
+
+@media (min-width: 991px) {
+    #tryDragging{
+        display: block;
+    }
+
+    .factObject{
+        border: 4px solid;
+        position: absolute;
+        max-width: 80vw;
+        max-height: 50vh;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .taken1{
+        background-color: rgb(169, 211, 43);
+    }
+    .taken2{
+        background-color: rgb(6, 139, 255);
+    }
+    .taken3{
+        background-color: rgb(255, 106, 0);
+    }
+    .taken4{
+        background-color: rgb(225, 195, 0);
+    }
+    .taken5{
+        background-color: rgb(255, 37, 37);
+    }
+}
+
+@media (min-width: 1230px) {
+    .factObject{
+        max-width: 60vw;
+    }
+}
+
+@media (min-width: 1500px) {
+    .factObject{
+        max-width: 40vw;
+    }
+}

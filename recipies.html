@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potato Recipies</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/recipe.css">
+</head>
+
+<body onload="loadRecipes()">
+    <header>
+        <button id="open-menu" onclick="openMenu()">
+            <img src="img/potato.png" alt="dropDownIcon">
+        </button>
+        <h1 id="title">Recipies</h1>
+        <div id="menu-base">
+                <a href="index.html">Home Page</a>
+                <a href="recipies.html" id="active">Recipies</a>
+                <a href="potatoFacts.html">Potato Facts</a>
+        </div>
+    </header>
+    
+    <div class="createRecipePage" id="createPage-base">
+        <button onclick="createRecipeClose()">close</button>
+        <form id="createRecipeForm" onsubmit="createRecipeFinish()">
+            <h2>Create your own recipe!</h2>
+            <input type="text" id="createRecipeName" placeholder="Name - ex. Baked Potato" required>
+            <textarea id="createRecipeDesc" placeholder="Description (TIP - for spaces, use &lt br &gt) &#10 ex: &#10 Something: &lt br &gt &#10 - something &lt br &gt &#10 -something &lt br &gt &#10 -something" required></textarea>
+            <label for="createRecipeImg" id="createRecipeImgLabel">Choose Image</label>
+            <input type="file" accept="image/*" id="createRecipeImg" required style="display: none;">
+            <input type="submit"/>
+        </form>
+    </div>
+
+    <div class="content">
+        <div id="recipesPage">
+        </div>
+    </div>
+    <footer>
+        <h1 id="createRecipe" onclick="createRecipeOpen()">Create your OWN!</h1>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+<script src="js/recipes.js"></script>
+<script src="js/createRecipe.js"></script>
+<script src="js/addRecipe.js"></script>
+</html>
