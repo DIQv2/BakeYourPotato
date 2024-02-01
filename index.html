@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cook Your Potato</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body onload="setDefaultCarousel()">
+    <header>
+      <button id="open-menu" onclick="openMenu()">
+        <img src="img/potato.png" alt="dropDownIcon" />
+      </button>
+      <h1 id="title">Cook Your Potato</h1>
+      <div id="menu-base">
+        <a href="index.html" id="active">Home Page</a>
+        <a href="recipies.html">Recipies</a>
+        <a href="potatoFacts.html">Potato Facts</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <div id="intro">
+        <p>Text written by -ChatGPT AI-</p>
+        <p>
+          &nbsp;&nbsp;&nbsp;Welcome to the ultimate destination for potato
+          lovers! Get ready to embark on a culinary journey filled with the
+          savory delights of spuds. Whether you're a seasoned chef or a kitchen
+          novice, this page is your go-to source for potato perfection. From
+          crispy fries to creamy mashed potatoes, we've got all your potato
+          cravings covered. Let's peel, chop, and savor the magic of these
+          versatile tubers together! 🥔🍽️
+        </p>
+        <p>#PotatoPassion</p>
+      </div>
+
+      <div id="featuredPageContent">
+        <label for="featured" id="feauturedLabel1"
+          ><h2>Feautured Recepies</h2></label
+        >
+        <div id="featured">
+          <div class="container">
+            <img id="featuredImage" />
+            <div id="featuredName"></div>
+            <section
+              class="leftButton"
+              onclick="changeFeautured('l')"
+            ></section>
+            <section
+              class="rightButton"
+              onclick="changeFeautured('r')"
+            ></section>
+          </div>
+        </div>
+        <button id="checkOut" onclick="goToFeautured()">Check It Out!</button>
+      </div>
+
+      <br /><br />
+
+      <div id="outro">
+        <p>
+          &nbsp;&nbsp;&nbsp;As you explore the wonderful world of potato cooking
+          on this page, you'll discover a treasure trove of recipes, tips, and
+          tricks that will elevate your culinary skills to new heights. From the
+          crispy golden edges of Hasselback Potatoes to the comforting embrace
+          of loaded baked potatoes, each recipe is crafted with precision and a
+          dash of creativity. Our goal is to not just fill your plate but to
+          tantalize your taste buds and ignite your passion for potatoes. Join
+          our community of potato enthusiasts, share your culinary adventures,
+          and let's create a virtual kitchen where the love for spuds knows no
+          bounds. Get ready to embark on a flavorful journey that celebrates the
+          humble yet extraordinary potato! 🥔✨ #PotatoPerfection #SpudSquad
+        </p>
+      </div>
+
+      <!-- Content end div -->
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/recipes.js"></script>
+</html>
